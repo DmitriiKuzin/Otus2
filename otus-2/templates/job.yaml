@@ -23,7 +23,7 @@ spec:
       restartPolicy: Never
       containers:
         - name: {{ .Release.Name }}-otus-2-migrator-{{ .Release.Revision }}
-          image: otus-2-migrator:latest
+          image: kuzindiman/otus-2-migrator:latest
           imagePullPolicy: IfNotPresent
           env:
             - name: DB_CONNECTION_STRING
