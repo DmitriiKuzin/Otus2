@@ -1,0 +1,26 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: otus-2-migration-11
+  namespace: otus-2
+spec:
+  parallelism: 1
+  completions: 1
+  backoffLimit: 1
+  template:
+    metadata:
+      labels:
+       app: otus-otus-2-migration
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: otus-2-migration
+          image: otus-2-migrator:latest
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: DB_CONNECTION_STRING
+              valueFrom:
+                secretKeyRef:
+                  key: connectionString
+                  name: otus-2-db-connection    
+          

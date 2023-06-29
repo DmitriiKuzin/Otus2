@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: otus-2-db-connection
+  namespace: otus-2
+stringData: 
+  connectionString: "Server=otus-postgresql.default;Port=5432;Database=otus;User Id=postgres;Password=DAScYBajr0;Include Error Detail = true"

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Otus.2", "Otus.2\Otus.2.csproj", "{4C9586C3-1632-480F-BE7D-18B56AFD715E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Otus.2.DAL", "Otus.2.DAL\Otus.2.DAL.csproj", "{D5BF8D90-EF0D-40E6-A0AF-FF1E31D567E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Otus.2.Migrator", "Otus.2.Migrator\Otus.2.Migrator.csproj", "{90EB17D9-60DD-48A6-8E8C-015F6BC9EAA8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C9586C3-1632-480F-BE7D-18B56AFD715E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C9586C3-1632-480F-BE7D-18B56AFD715E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C9586C3-1632-480F-BE7D-18B56AFD715E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C9586C3-1632-480F-BE7D-18B56AFD715E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5BF8D90-EF0D-40E6-A0AF-FF1E31D567E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5BF8D90-EF0D-40E6-A0AF-FF1E31D567E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5BF8D90-EF0D-40E6-A0AF-FF1E31D567E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5BF8D90-EF0D-40E6-A0AF-FF1E31D567E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90EB17D9-60DD-48A6-8E8C-015F6BC9EAA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90EB17D9-60DD-48A6-8E8C-015F6BC9EAA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90EB17D9-60DD-48A6-8E8C-015F6BC9EAA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90EB17D9-60DD-48A6-8E8C-015F6BC9EAA8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

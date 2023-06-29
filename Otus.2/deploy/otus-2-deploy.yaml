@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: otus-2-app
+  namespace: otus-2
+  labels:
+    app: otus-2-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: otus-2-app
+  template:
+    metadata:
+      name: otus-2-app
+      labels:
+        app: otus-2-app
+    spec:
+      serviceAccountName: jobs-pods-reader
+      initContainers:
+        - name: otus-2-app-init
+          image: groundnuty/k8s-wait-for:v1.5.1
+          imagePullPolicy: IfNotPresent
+          args:
+            - "job"
+            - "otus-2-migration-11"
+      containers:
+        - name: otus-2-app
+          image: otus.2:latest
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: DB_CONNECTION_STRING
+              valueFrom:
+                secretKeyRef:
+                  key: connectionString
+                  name: otus-2-db-connection              
+      restartPolicy: Always
+      
