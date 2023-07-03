@@ -5,7 +5,7 @@
 namespace: "otus-2-test"
 
 postgresPassword: &global-postgresPassword 35135143s5fasfawf
-host: "arch.homework"
+host: &host "arch.homework"
 
 postgresql:
   primary:
@@ -13,5 +13,19 @@ postgresql:
       size: 500Mi
   auth:
     postgresPassword: *global-postgresPassword
-
+    
+kube-prometheus-stack:
+  grafana:
+    grafana.ini:
+      server:
+        domain: arch.homework
+        root_url: "%(protocol)s://%(domain)s/grafana"
+        serve_from_sub_path: true
+    ingress:
+      enabled: true
+      annotations:
+        kubernetes.io/ingress.class: nginx
+      hosts:
+        - *host
+      path: "/grafana/"
 replicaCount: 1

@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Otus._2.DAL;
 using Otus._2.Dto;
 using Otus._2.Services;
+using Prometheus;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Configuration.AddUserSecrets<Program>();
@@ -22,7 +23,8 @@ var app = builder.Build();
 
 app.UseSwagger();
 app.UseSwaggerUI();
-
+app.UseHttpMetrics();
+app.MapMetrics();
 
 app.UseExceptionHandler(exceptionHandlerApp
     => exceptionHandlerApp.Run(async context

@@ -26,7 +26,7 @@ spec:
             - {{ .Release.Name }}-otus-2-migrator-{{ .Release.Revision }}
       containers:
         - name: {{ .Release.Name }}-otus-2-app-{{ .Release.Revision }}
-          image: kuzindiman/otus-2-app:latest
+          image: kuzindiman/otus-2-app:{{ .Chart.Version }}
           imagePullPolicy: IfNotPresent
           env:
             - name: DB_CONNECTION_STRING

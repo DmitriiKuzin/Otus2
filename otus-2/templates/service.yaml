@@ -3,12 +3,15 @@ kind: Service
 metadata:
   name: {{ .Release.Name }}-otus-2-app-{{ .Release.Revision }}
   labels:
+    name: {{ .Release.Name }}-otus-2-app-{{ .Release.Revision }}
+    release: {{ .Release.Name }}
     {{- include "otus-2.labels" . | nindent 4 }}
 spec:
   selector:
     app: {{ .Release.Name }}-otus-2-app-{{ .Release.Revision }}
   ports:
-    - protocol: TCP
+    - name: web
+      protocol: TCP
       port: 80
       targetPort: 80
   type: ClusterIP
