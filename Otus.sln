@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Otus.2.DAL", "Otus.2.DAL\Ot
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Otus.2.Migrator", "Otus.2.Migrator\Otus.2.Migrator.csproj", "{90EB17D9-60DD-48A6-8E8C-015F6BC9EAA8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Otus.2.LoadTest", "Otus.2.LoadTest\Otus.2.LoadTest.csproj", "{2EC4A4D8-48D6-44F3-9896-7B1AFB98F444}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{90EB17D9-60DD-48A6-8E8C-015F6BC9EAA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90EB17D9-60DD-48A6-8E8C-015F6BC9EAA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90EB17D9-60DD-48A6-8E8C-015F6BC9EAA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EC4A4D8-48D6-44F3-9896-7B1AFB98F444}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EC4A4D8-48D6-44F3-9896-7B1AFB98F444}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EC4A4D8-48D6-44F3-9896-7B1AFB98F444}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EC4A4D8-48D6-44F3-9896-7B1AFB98F444}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net7.0</TargetFramework>
+        <RootNamespace>Otus._2.LoadTest</RootNamespace>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Reference Include="NBomber">
+        <HintPath>NBomber.dll</HintPath>
+      </Reference>
+      <Reference Include="NBomber.Contracts">
+        <HintPath>NBomber.Contracts.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="NBomber" Version="5.1.0" />
+    </ItemGroup>
+
+</Project>
